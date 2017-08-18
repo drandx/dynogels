@@ -1,4 +1,4 @@
-declare module 'dynogels' {
+declare module 'drandx-dynogels' {
     import * as _AWS from 'aws-sdk';
     import * as joi from 'joi';
   
