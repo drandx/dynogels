@@ -23,10 +23,10 @@ declare module 'drandx-dynogels' {
   
     export class Model {
       get(hashKey: string, rangeKey?: string|Function, options?: object|Function, callback?: Function); //@todo define options object
-      update(item: object, options: object|Function, callback: Function);
+      update(item: object, options?: object|Function, callback?: Function);
       query(hashKey: string): Query;
       scan(): Scan;
-      create(modelData: Object, options: Object, callback: Function): void; //@todo define modelData, options type.
+      create(modelData: object, options?: object|Function, callback?: Function): void; //@todo define modelData, options type.
     }
     
     export interface SchemaAttributes {
