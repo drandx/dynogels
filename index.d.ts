@@ -3,6 +3,7 @@ declare module 'drandx-dynogels' {
     import * as joi from 'joi';
   
     export function define(modelName: string, schemaConfig: SchemaConfig): Model;
+    export function createTables(options?: {}, callback: Function);
     export const AWS: typeof _AWS;      
   
     export interface Index {

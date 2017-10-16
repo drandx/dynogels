@@ -54,6 +54,16 @@ dynogels.createTables(err => {
   Account.get('test11@example.com', printAccountInfo);
   Account.get('test@test.com', printAccountInfo);
 
+  console.log('** Account: ', Account);
+
+  Account.getAsync('test@test.com')
+  .then(res => {
+    console.log('** Res: ', res);
+  })
+  .catch(err => {
+    console.log('** Err: ', err);
+  });
+
   // Create an account
   const params = {
     email: 'test11@example.com', name: 'test 11', age: 21, scores: [22, 55, 44],
